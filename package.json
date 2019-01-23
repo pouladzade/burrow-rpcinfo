@@ -1,0 +1,31 @@
+{
+  "name": "burrow-rpcinfo",
+  "version": "0.0.1",
+  "description": "Javascript library that gets information from Hyperledger Burrow node over rpc.",
+  "main": "index.js",
+  "author": "Ahmad Pouladzadeh <pouladzade@gmail.com>",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com:pouladzade/burrow-rpcinfo",
+  "bugs": {
+    "url": "https://github.com:pouladzade/burrow-rpcinfo/issues"
+  },
+  "keywords": [
+    "snak",
+    "Burrow",
+    "Hyperledger",
+    "Monax"
+  ],
+  "maintainers": [{
+    "name": "Ahmad Pouladzadeh",
+    "email": "pouladzade@gmail.com"
+  }],
+  "preferGlobal": true,
+  "bin": "./index.js",
+  "dependencies": {
+    "request": "2.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:pouladzade/burrow-rpcinfo.git"
+  }
+}
