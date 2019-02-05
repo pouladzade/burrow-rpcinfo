@@ -3,6 +3,39 @@
 This is a JavaScript API for getting information from  [Hyperledger Burrow](https://github.com/hyperledger/burrow) node.
 
 
+Example :
+```js
+
+
+var Promise = require('promise')
+var RpcInfo = require('burrow-rpcinfo')
+var rpcInfo = new RpcInfo("tcp://127.0.0.1:26658")
+
+  getBalance(address) {
+    return new Promise(function (resolve, reject) {
+      rpcInfo.getAccount(address, (error, data) => {
+        if (data) {
+          resolve(data.Account.Balance)
+        } else {
+          reject(error)
+        }
+      })
+    })
+  }
+
+  getPermissions(address) {
+    return new Promise(function (resolve, reject) {
+      rpcInfo.getAccount(address, (error, data) => {
+        if (data) {
+          resolve(data.Account.Permissions)
+        } else {
+          reject(error)
+        }
+      })
+    })
+  }
+
+```
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
